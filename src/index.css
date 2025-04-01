@@ -17,7 +17,7 @@
   }
 
   h1 {
-    @apply text-3xl lg:text-4xl mb-4 w-[60%];
+    @apply text-3xl lg:text-4xl mb-4;
   }
 
   h2 {

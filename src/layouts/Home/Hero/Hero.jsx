@@ -3,22 +3,24 @@ import Button from "../../../components/Button/Button";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row md:justify-between md:items-center">
-      <div className="order-2 md:order-1 md:w-[45%]">
-        <a href="https://storyset.com/office">
-          <img className="w-auto" src={HeroImage} alt="Hero Image" />
-        </a>
-      </div>
-
-      <div className="mb-6 md:order-2 w-[100%] md:w-[60%]">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-12 md:py-20 gap-8">
+      <div className="w-full md:w-1/2">
         <h1>A Calm Space for Clear Thinking.</h1>
-
-        <p className="sub-text mb-4 lg:mb-6 lg:w-[80%]">
+        <p className="sub-text mb-6 lg:w-[80%]">
           Zendo is a mindful space to build, plan, and breathe — designed for
           clarity, powered by calm.
         </p>
-
         <Button text="SIGN UP" />
+      </div>
+
+      <div className="w-full md:w-1/2">
+        <a
+          href="https://storyset.com/office"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={HeroImage} alt="Hero" className="w-full h-auto" />
+        </a>
       </div>
     </section>
   );
