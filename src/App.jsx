@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
+import Home from "./layouts/Home/Home";
 
 function App() {
   return (
     <>
-      <h1 className="">Hello World!</h1>
+      <Home />
     </>
   );
 }
