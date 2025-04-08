@@ -3,15 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#3a6f78",
-        secondary: "#d85c5a",
-        accent: "#c6b6d6",
-        dark: "#1e1e1e",
-        light: "#eae6e1",
-      },
-      fontFamily: {
-        heading: ['"Playfair Display"', "serif"],
-        body: ['"Poppins"', "sans-serif"],
+        primary: "#6EAEDB",
+        secondary: "#C2635C",
+        accent: " #E9ECEF",
+        dark: "#2B2D42",
+        light: "#F8F9FA",
       },
     },
   },
