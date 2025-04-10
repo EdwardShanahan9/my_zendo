@@ -3,7 +3,7 @@ import Logo from "../../assets/icons/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="w-[90%] lg:w-[90%] mx-auto py-6 flex items-center justify-between">
+    <nav className=" py-6 flex items-center  justify-between mb-6">
       <img className="w-[30px] lg:w-[40px]" src={Logo} alt="Zendo Logo" />
 
       <ul className="hidden md:flex">
