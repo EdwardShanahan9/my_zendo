@@ -5,7 +5,8 @@ const Hero = () => {
   return (
     <div className="flex flex-col md:flex-row md:justify-between md:items-center">
       <div className="order-2 md:order-1 md:w-[45%]">
-        <img className="w-auto" src={HeroImage} alt="Hero Image" />
+        
+        <a href="https://storyset.com/office"><img className="w-auto" src={HeroImage} alt="Hero Image" /></a>
       </div>
 
       <div className="mb-6 md:order-2 md:w-[45%]">
