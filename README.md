@@ -13,3 +13,7 @@ This project is a refactored version of the [Code Institute Portfolio Project 2]
 ### Assests
 
 - Logo: Created by archer7 from the Noun Project.
+- Feature 1 Icon: Lotus by YANDI RS from <a href="https://thenounproject.com/browse/icons/term/lotus/" target="_blank" title="Lotus Icons">Noun Project</a> (CC BY 3.0)
+- Feature 2: zen stones by Anamika singh from <a href="https://thenounproject.com/browse/icons/term/zen-stones/" target="_blank" title="zen stones Icons">Noun Project</a> (CC BY 3.0)
+- Feature 3: leaf by Good Men from <a href="https://thenounproject.com/browse/icons/term/leaf/" target="_blank" title="leaf Icons">Noun Project</a> (CC BY 3.0)
+- Feature 4: potted plant by bellvania naomi argi pramana from <a href="https://thenounproject.com/browse/icons/term/potted-plant/" target="_blank" title="potted plant Icons">Noun Project</a> (CC BY 3.0)
