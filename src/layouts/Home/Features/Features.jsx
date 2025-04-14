@@ -2,6 +2,7 @@ import Feature1 from "../../../assets/icons/feature-1.svg";
 import Feature2 from "../../../assets/icons/feature-2.svg";
 import Feature3 from "../../../assets/icons/feature-3.svg";
 import Feature4 from "../../../assets/icons/feature-4.svg";
+import Feature from "../../../components/Feature/Feature";
 
 const featureList = [
   {
@@ -39,15 +40,14 @@ const Features = () => {
       </div>
 
       <ul>
-        {featureList.map((feature) => {
+        {featureList.map((feature, index) => {
           return (
-            <li>
-              <img src={feature.img} alt="Feature 1" />
-
-              <h3>{feature.heading}</h3>
-
-              <p>{feature.text}</p>
-            </li>
+            <Feature
+              index={index}
+              img={feature.img}
+              heading={feature.heading}
+              text={feature.text}
+            />
           );
         })}
       </ul>
