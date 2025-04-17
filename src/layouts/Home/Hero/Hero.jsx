@@ -11,11 +11,9 @@ const Hero = () => {
       </div>
 
       <div className="mb-6 md:order-2 md:w-[45%]">
-        <h1 className="text-2xl lg:text-4xl mb-4 lg:w-[80%]">
-          A Calm Space for Clear Thinking.
-        </h1>
+        <h1>A Calm Space for Clear Thinking.</h1>
 
-        <p className="text-sm lg:text-base mb-4 lg:mb-6  lg:w-[80%]">
+        <p className="sub-text mb-4 lg:mb-6 lg:w-[80%]">
           Zendo is a mindful space to build, plan, and breathe — designed for
           clarity, powered by calm.
         </p>

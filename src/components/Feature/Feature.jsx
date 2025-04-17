@@ -1,6 +1,6 @@
 const Feature = ({ img, heading, text, index }) => {
   return (
-    <li className="mb-6">
+    <li className="mb-7">
       <img
         className="mb-4"
         width={25}
@@ -11,7 +11,7 @@ const Feature = ({ img, heading, text, index }) => {
 
       <h3 className="mb-4">{heading}</h3>
 
-      <p className="">{text}</p>
+      <p className="sub-text">{text}</p>
     </li>
   );
 };

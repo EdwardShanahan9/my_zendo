@@ -31,9 +31,9 @@ const Features = () => {
   return (
     <section>
       <div className="mb-6">
-        <h2 className="">Find Clarity in Every Task</h2>
+        <h2>Find Clarity in Every Task</h2>
 
-        <p className="text-sm">
+        <p className="sub-text">
           Zendo brings focus and balance to your work, helping you stay
           organized and on track.
         </p>

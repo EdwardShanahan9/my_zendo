@@ -8,6 +8,7 @@ module.exports = {
         accent: " #E9ECEF",
         dark: "#2B2D42",
         light: "#F8F9FA",
+        lightDark: "#6A6A6A",
       },
     },
   },
