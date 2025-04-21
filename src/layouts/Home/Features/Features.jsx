@@ -2,7 +2,7 @@ import Feature1 from "../../../assets/icons/feature-1.svg";
 import Feature2 from "../../../assets/icons/feature-2.svg";
 import Feature3 from "../../../assets/icons/feature-3.svg";
 import Feature4 from "../../../assets/icons/feature-4.svg";
-import Feature from "../../../components/Feature/Feature";
+import Feature from "../Feature/Feature";
 
 const featureList = [
   {

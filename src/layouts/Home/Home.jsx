@@ -5,6 +5,7 @@ import Features from "./Features/Features";
 import About from "./About/About";
 import Testimonials from "./Testimonials/Testimonials";
 import CTA from "./CTA/CTA";
+import Contact from "./Contact/Contact";
 const Home = () => {
   return (
     <div className="w-[90%] lg:w-[90%] mx-auto">
@@ -20,6 +21,8 @@ const Home = () => {
         <Testimonials />
 
         <CTA />
+
+        <Contact />
       </main>
     </div>
   );
