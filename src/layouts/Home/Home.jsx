@@ -4,6 +4,7 @@ import Hero from "./Hero/Hero";
 import Features from "./Features/Features";
 import About from "./About/About";
 import Testimonials from "./Testimonials/Testimonials";
+import CTA from "./CTA/CTA";
 const Home = () => {
   return (
     <div className="w-[90%] lg:w-[90%] mx-auto">
@@ -17,6 +18,8 @@ const Home = () => {
         <About />
 
         <Testimonials />
+
+        <CTA />
       </main>
     </div>
   );
