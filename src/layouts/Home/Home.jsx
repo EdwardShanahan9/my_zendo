@@ -24,6 +24,10 @@ const Home = () => {
 
         <Contact />
       </main>
+
+      <footer>
+        footer
+      </footer>
     </div>
   );
 };
