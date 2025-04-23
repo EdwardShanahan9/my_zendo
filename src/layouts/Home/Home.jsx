@@ -6,6 +6,8 @@ import About from "./About/About";
 import Testimonials from "./Testimonials/Testimonials";
 import CTA from "./CTA/CTA";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
+
 const Home = () => {
   return (
     <div className="w-[90%] lg:w-[90%] mx-auto">
@@ -24,6 +26,8 @@ const Home = () => {
 
         <Contact />
       </main>
+
+      <Footer />
     </div>
   );
 };
