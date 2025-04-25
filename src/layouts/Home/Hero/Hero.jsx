@@ -10,7 +10,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="mb-6 md:order-2 md:w-[45%]">
+      <div className="mb-6 md:order-2 w-[100%] md:w-[60%]">
         <h1>A Calm Space for Clear Thinking.</h1>
 
         <p className="sub-text mb-4 lg:mb-6 lg:w-[80%]">
