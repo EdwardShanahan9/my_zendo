@@ -30,16 +30,16 @@ const featureList = [
 const Features = () => {
   return (
     <section>
-      <div className="mb-6 md:mb-10 text-center">
+      <div className="mb-6 md:mb-10 md:text-center">
         <h2>Find Clarity in Every Task</h2>
 
-        <p className="sub-text w-[60%] lg:w-[40%] m-auto">
+        <p className="sub-text md:w-[60%] md:lg:w-[40%] m-auto">
           Zendo brings focus and balance to your work, helping you stay
           organized and on track.
         </p>
       </div>
 
-      <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {featureList.map((feature, index) => {
           return (
             <Feature
