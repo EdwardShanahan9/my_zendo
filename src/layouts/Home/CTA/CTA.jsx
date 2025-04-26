@@ -3,7 +3,7 @@ import CTAImage from "../../../assets/images/cta.svg";
 
 const CTA = () => {
   return (
-    <div>
+    <section>
       <div>
         <h2>Ready to Work with Clarity?</h2>
 
@@ -19,7 +19,7 @@ const CTA = () => {
           <img src={CTAImage} alt="CTA Image" />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

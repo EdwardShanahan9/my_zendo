@@ -2,7 +2,7 @@ import Button from "../../../components/Button/Button";
 
 const Contact = () => {
   return (
-    <div>
+    <section>
       <div>
         <h2>Get in Touch</h2>
 
@@ -34,7 +34,7 @@ const Contact = () => {
 
         <Button text="Submit" />
       </form>
-    </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import AboutImage from "../../../assets/images/about.svg";
 
 const About = () => {
   return (
-    <div>
+    <section>
       <div className="mb-10">
         <h2 className="">Designed for Peaceful Productivity</h2>
 
@@ -23,7 +23,7 @@ const About = () => {
           <img src={AboutImage} alt="About Image" />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
