@@ -31,6 +31,10 @@
   .sub-text {
     @apply text-sm lg:text-base text-lightDark;
   }
+
+  section {
+    @apply mb-6;
+  }
 }
 
 body,
