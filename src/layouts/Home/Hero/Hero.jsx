@@ -3,7 +3,7 @@ import Button from "../../../components/Button/Button";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col md:flex-row md:justify-between md:items-center mb-6">
+    <section className="flex flex-col md:flex-row md:justify-between md:items-center">
       <div className="order-2 md:order-1 md:w-[45%]">
         <a href="https://storyset.com/office">
           <img className="w-auto" src={HeroImage} alt="Hero Image" />
