@@ -1,7 +1,13 @@
 const Feature = ({ img, heading, text, index }) => {
   return (
     <li className="">
-      <img className="mb-4" src={img} alt={`Feature ${index}`} />
+      <img
+        width={25}
+        height={25}
+        className="mb-4"
+        src={img}
+        alt={`Feature ${index}`}
+      />
 
       <h3 className="mb-4">{heading}</h3>
 
