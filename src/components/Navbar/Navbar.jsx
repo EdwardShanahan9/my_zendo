@@ -3,32 +3,36 @@ import Logo from "../../assets/icons/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className=" py-6 flex items-center  justify-between mb-6">
-      <img className="w-[30px] lg:w-[40px]" src={Logo} alt="Zendo Logo" />
+    <nav className="py-4 md:px-8 lg:px-16 flex items-center justify-between">
+      <img
+        className="w-[28px] md:w-[32px] lg:w-[40px]"
+        src={Logo}
+        alt="Zendo Logo"
+      />
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex space-x-4 lg:space-x-8 text-sm">
         <li>
-          <a className="mr-4 lg:mr-8 text-sm" href="#">
+          <a href="#" className="hover:text-primary transition">
             Home
           </a>
         </li>
         <li>
-          <a className="mr-4 lg:mr-8 text-sm" href="#">
+          <a href="#" className="hover:text-primary transition">
             Features
           </a>
         </li>
         <li>
-          <a className="mr-4 lg:mr-8 text-sm" href="#">
+          <a href="#" className="hover:text-primary transition">
             About
           </a>
         </li>
         <li>
-          <a className="mr-4 lg:mr-8 text-sm" href="#">
+          <a href="#" className="hover:text-primary transition">
             Testimonials
           </a>
         </li>
         <li>
-          <a className="text-sm" href="#">
+          <a href="#" className="hover:hover:text-primary transition">
             Contact
           </a>
         </li>
