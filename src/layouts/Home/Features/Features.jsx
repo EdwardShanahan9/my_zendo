@@ -29,28 +29,25 @@ const featureList = [
 
 const Features = () => {
   return (
-    <section>
+    <section className=" md:px-8 lg:px-16 py-12">
       <div className="mb-6 md:mb-10 md:text-center">
         <h2>Find Clarity in Every Task</h2>
-
-        <p className="sub-text md:w-[60%] md:lg:w-[40%] m-auto">
+        <p className="sub-text md:w-[60%] lg:w-[40%] mx-auto">
           Zendo brings focus and balance to your work, helping you stay
           organized and on track.
         </p>
       </div>
 
       <ul className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {featureList.map((feature, index) => {
-          return (
-            <Feature
-              key={index}
-              index={index}
-              img={feature.img}
-              heading={feature.heading}
-              text={feature.text}
-            />
-          );
-        })}
+        {featureList.map((feature, index) => (
+          <Feature
+            key={index}
+            index={index}
+            img={feature.img}
+            heading={feature.heading}
+            text={feature.text}
+          />
+        ))}
       </ul>
     </section>
   );

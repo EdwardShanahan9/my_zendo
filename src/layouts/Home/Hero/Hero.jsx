@@ -3,7 +3,7 @@ import Button from "../../../components/Button/Button";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-8 lg:px-16 py-12 md:py-20 gap-8">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between  md:px-8 lg:px-16 py-12 md:py-20 gap-8">
       <div className="w-full md:w-1/2">
         <h1>A Calm Space for Clear Thinking.</h1>
         <p className="sub-text mb-6 lg:w-[80%]">
