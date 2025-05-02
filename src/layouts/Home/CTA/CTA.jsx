@@ -3,20 +3,27 @@ import CTAImage from "../../../assets/images/cta.svg";
 
 const CTA = () => {
   return (
-    <section>
-      <div>
-        <h2>Ready to Work with Clarity?</h2>
+    <section className="py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-8">
+      <div className="w-full md:w-1/2 text-left md:text-start">
+        <h2 className="mb-4">Ready to Work with Clarity?</h2>
 
-        <p>Take the first step toward a more mindful and focused workflow.</p>
+        <p className="sub-text mb-2">
+          Take the first step toward a more mindful and focused workflow.
+        </p>
+        <p className="sub-text mb-6">
+          Join Zendo and bring calm to your productivity.
+        </p>
 
-        <p>Join Zendo and bring calm to your productivity.</p>
-
-        <Button text="Get Started – It’s Free " />
+        <Button text="Get Started – It’s Free" />
       </div>
 
-      <div>
-        <a href="https://storyset.com/people">
-          <img src={CTAImage} alt="CTA Image" />
+      <div className="w-full md:w-1/2">
+        <a
+          href="https://storyset.com/people"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={CTAImage} alt="CTA" className="w-full h-auto" />
         </a>
       </div>
     </section>
