@@ -2,11 +2,11 @@ import AboutImage from "../../../assets/images/about.svg";
 
 const About = () => {
   return (
-    <section>
-      <div className="mb-10">
-        <h2 className="">Designed for Peaceful Productivity</h2>
+    <section className="px-4 md:px-8 lg:px-16 py-12 flex flex-col md:flex-row items-center justify-between gap-10">
+      <div className="w-full md:w-1/2 order-2 md:order-2">
+        <h2 className="mb-4">Designed for Peaceful Productivity</h2>
 
-        <p className="sub-text mb-4">
+        <p className="sub-text mb-3">
           Zendo is more than just a productivity tool — it’s a quiet digital
           space designed for clarity, calm, and intentional work.
         </p>
@@ -18,9 +18,13 @@ const About = () => {
         </p>
       </div>
 
-      <div>
-        <a href="https://storyset.com/happy">
-          <img src={AboutImage} alt="About Image" />
+      <div className="w-full md:w-1/2 order-1 md:order-1">
+        <a
+          href="https://storyset.com/happy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={AboutImage} alt="About" className="w-full h-auto" />
         </a>
       </div>
     </section>
