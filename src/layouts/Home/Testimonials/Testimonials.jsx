@@ -22,38 +22,35 @@ const testimonials = [
     text: "The simplicity of Zendo helps me focus without distractions. It’s everything I’ve been looking for.",
   },
 ];
+
 const Testimonials = () => {
   return (
-    <section>
-      <div className="mb-6">
-        <h2>Voices of Calm and Clarity</h2>
-
-        <p className="sub-text">
+    <section className=" py-12">
+      <div className="mb-10 text-left md:text-center">
+        <h2 className="mb-2">Voices of Calm and Clarity</h2>
+        <p className="sub-text max-w-xl mx-auto">
           Zendo is helping people find clarity and flow in their everyday work —
           without the stress.
         </p>
       </div>
 
-      <ul>
-        {testimonials.map((testimonial, index) => {
-          return (
-            <li className="mb-6" key={index}>
-              <img
-                className="mb-4"
-                src={TestimonialIcon}
-                alt="Testimonial Icon"
-                width={25}
-                height={25}
-              />
-              <p className="sub-text mb-2">{testimonial.text}</p>
-
-              <p>
-                - <span className="sub-text">{testimonial.name},</span>{" "}
-                <span className="sub-text">{testimonial.profession}</span>
-              </p>
-            </li>
-          );
-        })}
+      <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {testimonials.map((testimonial, index) => (
+          <li key={index} className="bg-white p-6 rounded-xl shadow-sm">
+            <img
+              src={TestimonialIcon}
+              alt="Testimonial Icon"
+              width={24}
+              height={24}
+              className="mb-4"
+            />
+            <p className="sub-text mb-3">"{testimonial.text}"</p>
+            <p className="text-sm font-medium">
+              – {testimonial.name},{" "}
+              <span className="text-gray-500">{testimonial.profession}</span>
+            </p>
+          </li>
+        ))}
       </ul>
     </section>
   );

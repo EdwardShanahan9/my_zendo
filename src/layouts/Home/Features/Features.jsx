@@ -29,7 +29,7 @@ const featureList = [
 
 const Features = () => {
   return (
-    <section className=" md:px-8 lg:px-16 py-12">
+    <section className="py-12">
       <div className="mb-6 md:mb-10 md:text-center">
         <h2>Find Clarity in Every Task</h2>
         <p className="sub-text md:w-[60%] lg:w-[40%] mx-auto">
