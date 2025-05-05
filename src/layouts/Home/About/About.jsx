@@ -2,7 +2,7 @@ import AboutImage from "../../../assets/images/about.svg";
 
 const About = () => {
   return (
-    <section className=" py-12 flex flex-col md:flex-row items-center justify-between gap-10">
+    <section className="py-12 flex flex-col md:flex-row items-center justify-between gap-10">
       <div className="w-full md:w-1/2 order-2 md:order-2">
         <h2 className="mb-4">Designed for Peaceful Productivity</h2>
 
