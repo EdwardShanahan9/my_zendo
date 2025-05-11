@@ -10,7 +10,7 @@ import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
-    <div className="w-[90%] lg:w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto">
       <Navbar />
 
       <main>
