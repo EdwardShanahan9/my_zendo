@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/icons/logo.svg";
+import AuthImage from "../../assets/images/auth.svg";
 import { Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
@@ -12,11 +13,15 @@ const AuthLayout = () => {
           alt="Zendo Logo"
         />
 
-        <h1 className="text-2xl font-semibold mb-2">Welcome Back to Zendo</h1>
+        <h1 className="mb-4">Welcome Back to Zendo</h1>
 
-        <p className="sub-text max-w-md mx-auto lg:mx-0">
+        <p className="sub-text max-w-md mx-auto lg:mx-0 mb-8">
           Sign in or create an account to continue your mindful workflow.
         </p>
+
+        <a className="hidden lg:block" href="https://storyset.com/office">
+          <img className="w-[70%]" src={AuthImage} alt="Office Illustration" />
+        </a>
       </div>
 
       <div className="w-full lg:w-1/2">
