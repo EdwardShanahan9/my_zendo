@@ -24,7 +24,7 @@ const About = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={AboutImage} alt="About" className="w-full h-auto" />
+          <img src={AboutImage} alt="About" className="md:w-[80%] h-auto" />
         </a>
       </div>
     </section>

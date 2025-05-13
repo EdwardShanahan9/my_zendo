@@ -1,9 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/icons/logo.svg";
 
 const Navbar = () => {
   return (
-    <nav className="py-4 flex items-center justify-between">
+    <nav className="py-4 flex items-center justify-between mb-4">
       <img
         className="w-[28px] md:w-[32px] lg:w-[40px]"
         src={Logo}
@@ -12,29 +12,14 @@ const Navbar = () => {
 
       <ul className="hidden md:flex space-x-4 lg:space-x-8 text-sm">
         <li>
-          <a href="#" className="hover:text-primary transition">
-            Home
-          </a>
+          <Link to="auth/signup" className="hover:text-primary transition">
+            Sign Up
+          </Link>
         </li>
         <li>
-          <a href="#" className="hover:text-primary transition">
-            Features
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:text-primary transition">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:text-primary transition">
-            Testimonials
-          </a>
-        </li>
-        <li>
-          <a href="#" className="hover:hover:text-primary transition">
-            Contact
-          </a>
+          <Link to="auth/login" className="hover:text-primary transition">
+            Login
+          </Link>
         </li>
       </ul>
     </nav>

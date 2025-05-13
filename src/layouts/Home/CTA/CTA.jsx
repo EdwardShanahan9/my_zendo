@@ -3,8 +3,8 @@ import CTAImage from "../../../assets/images/cta.svg";
 
 const CTA = () => {
   return (
-    <section className="py-12 flex flex-col-reverse md:flex-row items-center justify-between gap-8">
-      <div className="w-full md:w-1/2 text-left md:text-start">
+    <section className="py-12 flex-col flex md:flex-row items-center justify-between gap-8">
+      <div className="">
         <h2 className="mb-4">Ready to Work with Clarity?</h2>
 
         <p className="sub-text mb-2">
@@ -17,13 +17,13 @@ const CTA = () => {
         <Button text="Get Started – It’s Free" />
       </div>
 
-      <div className="w-full md:w-1/2">
+      <div className="">
         <a
           href="https://storyset.com/people"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={CTAImage} alt="CTA" className="w-full h-auto" />
+          <img src={CTAImage} alt="CTA" className="w-full md:w-[80%]" />
         </a>
       </div>
     </section>

@@ -5,8 +5,8 @@ import { Outlet } from "react-router-dom";
 
 const AuthLayout = () => {
   return (
-    <div className="w-[90%] md:w-[60%] lg:w-[90%] mx-auto flex flex-col lg:flex-row h-screen items-center justify-center">
-      <div className="w-full lg:w-1/2 mb-10 lg:mb-0 text-center lg:text-left">
+    <div className="py-8 w-[90%] md:w-[60%] lg:w-[90%] mx-auto flex flex-col lg:flex-row md:h-screen items-center justify-center">
+      <div className="w-full lg:w-1/2 mb-10 lg:mb-0  ">
         <img
           className="w-[28px] md:w-[32px] lg:w-[40px] mb-4 mx-auto lg:mx-0"
           src={Logo}
@@ -19,12 +19,12 @@ const AuthLayout = () => {
           Sign in or create an account to continue your mindful workflow.
         </p>
 
-        <a className="hidden lg:block" href="https://storyset.com/office">
+        {/* <a className="hidden lg:block" href="https://storyset.com/office">
           <img className="w-[70%]" src={AuthImage} alt="Office Illustration" />
-        </a>
+        </a> */}
       </div>
 
-      <div className="w-full lg:w-1/2">
+      <div className="w-full lg:w-1/3">
         <Outlet />
       </div>
     </div>
