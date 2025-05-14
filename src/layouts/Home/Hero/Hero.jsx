@@ -21,7 +21,7 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={HeroImage} alt="Hero" className="w-full md:w-[80%]" />
+          <img src={HeroImage} alt="Hero" className="w-full" />
         </a>
       </div>
     </section>
