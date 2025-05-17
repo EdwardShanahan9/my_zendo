@@ -12,7 +12,7 @@ const Hero = () => {
           clarity, powered by calm.
         </p>
 
-        <Button text="SIGN UP" />
+        <Button link="/auth/signup" text="SIGN UP" />
       </div>
 
       <div className="w-full justify-self-end">

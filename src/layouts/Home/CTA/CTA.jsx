@@ -14,7 +14,7 @@ const CTA = () => {
           Join Zendo and bring calm to your productivity.
         </p>
 
-        <Button text="Get Started – It’s Free" />
+        <Button link="auth/signup" text="Get Started – It’s Free" />
       </div>
 
       <div className="md:w-1/2 ">
