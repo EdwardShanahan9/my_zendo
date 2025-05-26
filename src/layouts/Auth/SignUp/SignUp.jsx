@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { signUp } from "../../../backend/Auth/Auth";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,19 @@ const SignUp = () => {
     confirmPassword: "",
   });
   const [errors, setErrors] = useState({});
+
+  // // Replace with your test credentials
+  // const testEmail = "testuser@example.com";
+  // const testPassword = "test1234";
+  // const testName = "Test User";
+
+  // signUp(testEmail, testPassword, testName)
+  //   .then((res) => {
+  //     console.log("Sign up successful:", res);
+  //   })
+  //   .catch((err) => {
+  //     console.error("Sign up failed:", err.message);
+  //   });
 
   const validate = () => {
     const newErrors = {};
@@ -47,7 +61,6 @@ const SignUp = () => {
     }
   };
   return (
-    // ...inside your return statement...
     <form className="space-y-4" onSubmit={handleSubmit}>
       <h2 className="text-xl  mb-8">Create your account</h2>
 
