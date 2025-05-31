@@ -10,19 +10,6 @@ const SignUp = () => {
   });
   const [errors, setErrors] = useState({});
 
-  // // Replace with your test credentials
-  // const testEmail = "testuser@example.com";
-  // const testPassword = "test1234";
-  // const testName = "Test User";
-
-  // signUp(testEmail, testPassword, testName)
-  //   .then((res) => {
-  //     console.log("Sign up successful:", res);
-  //   })
-  //   .catch((err) => {
-  //     console.error("Sign up failed:", err.message);
-  //   });
-
   const validate = () => {
     const newErrors = {};
     if (!formData.name) newErrors.name = "Name is required";
@@ -54,10 +41,20 @@ const SignUp = () => {
     setErrors({ ...errors, [name]: "" });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log("Form submitted successfully", formData);
+      try {
+        const res = await signUp(
+          formData.email,
+          formData.password,
+          formData.name
+        );
+        console.log("Form submitted successfully", formData);
+      } catch (error) {
+        console.log("Error signing up:", error);
+        setErrors({ form: error.message || "Failed to sign up" });
+      }
     }
   };
   return (
@@ -138,6 +135,8 @@ const SignUp = () => {
       >
         Sign Up
       </button>
+
+      {errors.api && <p className="text-red-500 text-xs mt-1">{errors.api}</p>}
 
       <p className="text-sm text-center mt-4">
         Already have an account?{" "}
