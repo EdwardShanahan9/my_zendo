@@ -16,6 +16,8 @@ function App() {
           <Route path="signup" element={<SignUp />} />
           <Route path="login" element={<Login />} />
         </Route>
+
+        <Route path="dashboard" element={<div>Dashboard</div>}></Route>
       </Routes>
     </BrowserRouter>
   );
