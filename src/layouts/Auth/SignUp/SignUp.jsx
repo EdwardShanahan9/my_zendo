@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signUp } from "../../../backend/Auth/Auth";
+import { useUser } from "../../../context/User/UserContext";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +11,8 @@ const SignUp = () => {
     confirmPassword: "",
   });
   const [errors, setErrors] = useState({});
+  const navigate = useNavigate();
+  const { handleLogin } = useUser();
 
   const validate = () => {
     const newErrors = {};
@@ -21,8 +25,8 @@ const SignUp = () => {
     }
     if (!formData.password) {
       newErrors.password = "Password is required";
-    } else if (formData.password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters";
+    } else if (formData.password.length < 8) {
+      newErrors.password = "Password must be at least 8 characters";
     }
 
     if (!formData.confirmPassword)
@@ -45,15 +49,31 @@ const SignUp = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const res = await signUp(
-          formData.email,
-          formData.password,
-          formData.name
-        );
-        console.log("Form submitted successfully", formData);
+        await signUp(formData.email, formData.password, formData.name);
+
+        const session = await login(formData.email, formData.password);
+
+        const userData = {
+          email: formData.email,
+          name: formData.name,
+          session,
+        };
+
+        handleLogin(userData);
+
+        navigate("/dashboard");
       } catch (error) {
-        console.log("Error signing up:", error);
-        setErrors({ form: error.message || "Failed to sign up" });
+        if (error.code === 409) {
+          setErrors({
+            form: "Email already exists. Please log in or use another email.",
+          });
+        } else if (error.code === 429) {
+          setErrors({
+            form: "Too many requests. Please wait and try again later.",
+          });
+        } else {
+          setErrors({ form: error.message || "Failed to sign up" });
+        }
       }
     }
   };
